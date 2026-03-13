@@ -5,4 +5,4 @@ USERNAME=$1
 read USERNAME #the value entered above will be automatically attached to Username variable
 # PASSWORD=$2
 
-echo "username is: $USERNAME, Password is:$PASSWORD"
+echo "username is: $USERNAME"
