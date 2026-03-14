@@ -9,6 +9,7 @@ validate(){
         exit 1
     else
         echo "Installing MYSQL is Success"
+    fi
 }
 
 if [ $ID -ne 0 ]
