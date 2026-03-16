@@ -30,7 +30,7 @@ else
 fi #fi means reverse of if, indicating condition end
 
 # echo "All arguments passed:: $@"
-for package in $0
+for package in $@
 do
     yum list installed $package &>> $LOGFILE #check installed or not
     if [ $? -ne 0 ] #if not installed 
