@@ -14,19 +14,19 @@ LOG_FILE="/tmp/$0-$TIMESTAMP.log"
 validate(){
     if [ $1 -ne 0 ]
     then
-        echo "ERROR:: $2 ... $R failed $N"
+        echo -e "ERROR:: $2 ... ${R} failed ${N}"
         exit 1
     else
-        echo " $2 ... $G Success $N"
+        echo -e" $2 ... ${G} Success ${N}"
     fi
 }
 
 if [ $ID -ne 0 ]
 then
-    echo -e "$R ERROR:: Please run this script with root access $N"
+    echo -e "${R} ERROR:: Please run this script with root access ${N}"
     exit 1 #you can give other than 0
 else
-    echo "Your root $G user is accessed $N"
+    echo -e "Your root ${G} user is accessed ${N}"
 fi #fi means reverse of if, indicating condition end
 
 yum install mysql -y &>> $LOG_FILE 
