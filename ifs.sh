@@ -17,6 +17,6 @@ while IFS=":" read -r username password userid groupid user_fullname home_direct
 do
     echo -e "${Y}Username: ${N}$username"
     echo -e "${Y}User ID: ${N}$userid"
-    echo -e "${Y}Group ID: ${N}$user_fullname"
+    echo -e "${Y}Full Name: ${N}$user_fullname"
     
 done < $file
