@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 TO_TEAM=$1
 ALERT_TYPE=$2
