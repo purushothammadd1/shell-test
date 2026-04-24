@@ -15,4 +15,4 @@ do
     fi
 
 done <<< $DISK_USAGE
-echo -e "$message"
+echo -e "$message" | mail -s "High Disk Usage Alert" purushothammaddi621@gmail.com
