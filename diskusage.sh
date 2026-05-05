@@ -2,7 +2,7 @@
 
 DISK_USAGE=$(df -hT | grep -vE 'tmp|File')
 
-DISK_THRESHOLD=1
+DISK_THRESHOLD=70
 message=""
 
 while IFS= read -r line
@@ -16,4 +16,6 @@ do
 
 done <<< $DISK_USAGE
 # echo -e "$message" | mail -s "High Disk Usage Alert" purushothammaddi621@gmail.com
-sh mail.sh "Dev Team" "API Quality Health Alert" "$message" "purushothammaddi621@gmail.com" "Alert High Disk Usage"
+if [ -n "$message" ]; then
+    sh mail.sh "Dev Team" "API Quality Health Alert" "$message" "purushothammaddi621@gmail.com" "Alert High Disk Usage"
+fi
