@@ -20,3 +20,4 @@ while getopts ":n:w:h" opt; do
         h) USAGE; exit 0;;
     esac
 done
+echo "$WISHES, $NAME!"
