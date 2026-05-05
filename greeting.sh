@@ -29,4 +29,4 @@ if [ -z "$WISHES" ]; then
     WISHES="Hello"
 fi
 
-echo "$WISHES, $NAME!"
+# echo "$WISHES, $NAME!"
