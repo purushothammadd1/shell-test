@@ -26,4 +26,4 @@ if [ -z "$NAME" ] || if [ -z "$WISHES" ]; then
     exit 1
 fi
 
-echo "$WISHES, $NAME!. I have been learning"
+echo "$WISHES, $NAME!"
