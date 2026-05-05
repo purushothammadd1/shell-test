@@ -20,7 +20,7 @@ while getopts ":n:w:h" opt; do
         h) USAGE; exit 0;;
     esac
 done
-if [ -z "$NAME" ] || if [ -z "$WISHES" ]; then
+if [ -z "$NAME" ] || [ -z "$WISHES" ]; then
     echo "Error: Name (-n) is required"
     USAGE
     exit 1
